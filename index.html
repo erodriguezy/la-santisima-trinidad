@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Santísima Trinidad en los Evangelios</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #fffdf5;
+        }
+        h1, h2 {
+            font-family: 'Playfair Display', serif;
+        }
+        .trinity-card {
+            transition: all 0.3s ease;
+        }
+        .trinity-card:hover {
+            transform: translateY(-5px);
+        }
+        .bible-quote {
+            border-left: 4px solid #f59e0b;
+            padding-left: 1rem;
+            margin-bottom: 1.5rem;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body class="text-slate-800">
+
+    <!-- Hero Section -->
+    <header class="bg-amber-600 text-white py-12 px-6 shadow-lg border-b-4 border-yellow-400">
+        <div class="max-w-5xl mx-auto text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">La Revelación de la Santísima Trinidad</h1>
+            <p class="text-amber-50 text-lg max-w-2xl mx-auto">
+                Síntesis pedagógica con la traducción de la <strong>Biblia de Nuestro Pueblo</strong> para comprender cómo el Padre, el Hijo y el Espíritu Santo se manifiestan en los Evangelios.
+            </p>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-4 py-12">
+        
+        <!-- Trinity Navigation -->
+        <div class="flex flex-wrap justify-center gap-4 mb-12">
+            <button onclick="showSection('padre')" id="btn-padre" class="tab-btn px-8 py-3 bg-white shadow-md rounded-full font-semibold hover:bg-yellow-50 transition">El Padre</button>
+            <button onclick="showSection('hijo')" id="btn-hijo" class="tab-btn px-8 py-3 bg-white shadow-md rounded-full font-semibold hover:bg-yellow-50 transition">El Hijo</button>
+            <button onclick="showSection('espiritu')" id="btn-espiritu" class="tab-btn px-8 py-3 bg-white shadow-md rounded-full font-semibold hover:bg-yellow-50 transition">El Espíritu Santo</button>
+            <button onclick="showSection('momentos')" id="btn-momentos" class="tab-btn px-8 py-3 bg-white shadow-md rounded-full font-semibold hover:bg-yellow-50 transition">Momentos Trinitarios</button>
+        </div>
+
+        <!-- Section: El Padre -->
+        <section id="section-padre" class="content-section">
+            <div class="grid md:grid-cols-2 gap-8 items-start mb-12">
+                <div class="bg-yellow-100 p-8 rounded-2xl border-l-8 border-yellow-500 shadow-sm">
+                    <h2 class="text-3xl font-bold text-yellow-900 mb-4">Dios el Padre</h2>
+                    <p class="text-lg leading-relaxed mb-6 text-yellow-950">
+                        Jesús nos revela al Padre como aquel que es amor, providencia y origen. La relación íntima de Jesús con el Padre se manifiesta especialmente en sus momentos de oración profunda.
+                    </p>
+                    
+                    <h4 class="font-bold text-yellow-800 mb-3 uppercase text-sm tracking-wider">Jesús ora al Padre</h4>
+                    
+                    <div class="bible-quote text-yellow-900">
+                        <p class="mb-2">"Padre, te doy gracias porque me has escuchado. Yo sé que siempre me escuchas..."</p>
+                        <span class="text-sm font-bold">— Juan 11, 41-42 (Resurrección de Lázaro)</span>
+                    </div>
+
+                    <div class="bible-quote text-yellow-900">
+                        <p class="mb-2">"Padre, si quieres, aleja de mí este trago amargo; pero no se haga mi voluntad, sino la tuya."</p>
+                        <span class="text-sm font-bold">— Lucas 22, 42 (Getsemaní)</span>
+                    </div>
+
+                    <div class="bible-quote text-yellow-900">
+                        <p class="mb-2">"Padre, perdónalos, porque no saben lo que hacen."</p>
+                        <span class="text-sm font-bold">— Lucas 23, 34 (En la Cruz)</span>
+                    </div>
+                </div>
+
+                <div class="space-y-4">
+                    <div class="bg-white p-6 rounded-xl shadow-sm border border-yellow-100">
+                        <h3 class="font-bold text-amber-700 mb-2">La Oración Sacerdotal</h3>
+                        <p class="text-sm italic mb-2">"Padre, ha llegado la hora: glorifica a tu Hijo para que tu Hijo te glorifique a ti." (Jn 17, 1)</p>
+                        <p class="text-xs text-slate-500">Muestra la unidad de gloria y misión entre el Padre y el Hijo antes de la Pasión.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-sm border border-yellow-100">
+                        <h3 class="font-bold text-amber-700 mb-2">La Paternidad en Lucas</h3>
+                        <p class="text-sm italic mb-2">"Padre, en tus manos encomiendo mi espíritu." (Lc 23, 46)</p>
+                        <p class="text-xs text-slate-500">Revela la confianza absoluta del Hijo en el Padre hasta el último aliento.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-sm border border-yellow-100">
+                        <h3 class="font-bold text-amber-700 mb-2">El Padre Nuestro</h3>
+                        <p class="text-sm italic mb-2">"Ustedes oren así: Padre nuestro que estás en el cielo..." (Mt 6, 9)</p>
+                        <p class="text-xs text-slate-500">Jesús nos invita a participar de su misma relación filial con Dios.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: El Hijo -->
+        <section id="section-hijo" class="content-section hidden">
+            <div class="grid md:grid-cols-2 gap-8 items-start mb-12">
+                <div class="bg-orange-100 p-8 rounded-2xl border-l-8 border-orange-500 shadow-sm">
+                    <h2 class="text-3xl font-bold text-orange-900 mb-4">Dios el Hijo</h2>
+                    <p class="text-lg leading-relaxed mb-6">
+                        Jesucristo es el Verbo encarnado, el Hijo unigénito enviado por el Padre para la salvación del mundo. Su identidad está intrínreceivedmente ligada a su misión redentora.
+                    </p>
+                    
+                    <h4 class="font-bold text-orange-800 mb-3 uppercase text-sm tracking-wider">La Misión y el Origen</h4>
+
+                    <div class="bible-quote text-orange-900">
+                        <p class="mb-2">"Porque tanto amó Dios al mundo, que entregó a su Hijo único, para que quien crea en él no muera, sino que tenga vida eterna."</p>
+                        <span class="text-sm font-bold">— Juan 3, 16</span>
+                    </div>
+
+                    <div class="bible-quote text-orange-900">
+                        <p class="mb-2">"Porque he bajado del cielo no para hacer mi voluntad, sino la voluntad del que me envió."</p>
+                        <span class="text-sm font-bold">— Juan 6, 38</span>
+                    </div>
+
+                    <div class="bible-quote text-orange-900">
+                        <p class="mb-2">"quien me ve a mí, ve al que me ha enviado."</p>
+                        <span class="text-sm font-bold">— Juan 12, 45</span>
+                    </div>
+
+                    <div class="bible-quote text-orange-900">
+                        <p class="mb-2">"Nadie conoce al Hijo más que el Padre, y nadie conoce al Padre más que el Hijo y aquel a quien el Hijo se lo quiera revelar."</p>
+                        <span class="text-sm font-bold">— Mateo 11, 27</span>
+                    </div>
+                </div>
+
+                <div class="space-y-4">
+                    <div class="bg-white p-6 rounded-xl shadow-sm border border-orange-100">
+                        <h3 class="font-bold text-orange-700 mb-2">Identidad Divina (Juan 1)</h3>
+                        <p class="text-sm italic mb-2">"La Palabra se hizo carne y acampó entre nosotros, y contemplamos su gloria, gloria propia del Hijo único del Padre." (Jn 1, 14)</p>
+                        <p class="text-xs text-slate-500">Subraya la encarnación del Hijo como presencia real de Dios entre los hombres.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-sm border border-orange-100">
+                        <h3 class="font-bold text-orange-700 mb-2">El Único Camino</h3>
+                        <p class="text-sm italic mb-2">"Yo soy el camino, la verdad y la vida. Nadie va al Padre sino por mí." (Jn 14, 6)</p>
+                        <p class="text-xs text-slate-500">Establece a Jesús como el único mediador necesario entre la humanidad y el Padre.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-sm border border-orange-100">
+                        <h3 class="font-bold text-orange-700 mb-2">Testimonio del Padre</h3>
+                        <p class="text-sm italic mb-2">"Si yo no hubiera venido y no les hubiera hablado, no tendrían pecado; pero ahora no tienen excusa..." (Jn 15, 22)</p>
+                        <p class="text-xs text-slate-500">Muestra la responsabilidad de aceptar al Hijo como enviado de Dios.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: El Espiritu -->
+        <section id="section-espiritu" class="content-section hidden">
+            <div class="grid md:grid-cols-2 gap-8 items-start mb-12">
+                <div class="bg-amber-100 p-8 rounded-2xl border-l-8 border-amber-400 shadow-sm">
+                    <h2 class="text-3xl font-bold text-amber-900 mb-4">Dios el Espíritu Santo</h2>
+                    <p class="text-lg leading-relaxed mb-6">
+                        Jesús anuncia la venida del Espíritu Santo como el <b>Defensor</b> (Paráclito). Su llegada en Pentecostés marca el nacimiento de la Iglesia misionera.
+                    </p>
+                    
+                    <h4 class="font-bold text-amber-800 mb-3 uppercase text-sm tracking-wider">El Anuncio del Envío</h4>
+                    
+                    <div class="bible-quote text-amber-900">
+                        <p class="mb-2">"Les conviene que yo me vaya, porque si no me voy, el Defensor no vendrá a ustedes; si me voy, se lo enviaré."</p>
+                        <span class="text-sm font-bold">— Juan 16, 7</span>
+                    </div>
+
+                    <div class="bible-quote text-amber-900">
+                        <p class="mb-2">"Cuando venga el Espíritu de la verdad, los guiará hasta la verdad plena; pues no hablará por su cuenta, sino que dirá lo que oiga."</p>
+                        <span class="text-sm font-bold">— Juan 16, 13</span>
+                    </div>
+
+                    <h4 class="font-bold text-amber-800 mt-8 mb-3 uppercase text-sm tracking-wider">La Presencia en Pentecostés</h4>
+
+                    <div class="bible-quote text-amber-900">
+                        <p class="mb-2">"recibirán la fuerza del Espíritu Santo que descenderá sobre ustedes y serán mis testigos en Jerusalén... y hasta los confines del mundo."</p>
+                        <span class="text-sm font-bold">— Hechos 1, 8</span>
+                    </div>
+
+                    <div class="bible-quote text-amber-900">
+                        <p class="mb-2">"Se les aparecieron lenguas de fuego... Todos quedaron llenos de Espíritu Santo y empezaron a hablar en lenguas extrañas."</p>
+                        <span class="text-sm font-bold">— Hechos 2, 3-4</span>
+                    </div>
+                </div>
+
+                <div class="space-y-4">
+                    <div class="bg-white p-6 rounded-xl shadow-sm border border-amber-100">
+                        <h3 class="font-bold text-amber-700 mb-2">El Maestro Interior</h3>
+                        <p class="text-sm italic mb-2">"Pero el Defensor, el Espíritu Santo que el Padre enviará en mi nombre, les enseñará todo..." (Jn 14, 26)</p>
+                        <p class="text-xs text-slate-500">Muestra al Espíritu como aquel que profundiza en el corazón la enseñanza de Jesús.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-sm border border-amber-100">
+                        <h3 class="font-bold text-amber-700 mb-2">El Aliento de Vida</h3>
+                        <p class="text-sm italic mb-2">"Sopló sobre ellos y les dijo: —Reciban el Espíritu Santo." (Jn 20, 22)</p>
+                        <p class="text-xs text-slate-500">En la Resurrección, Jesús anticipa el don del Espíritu como vida nueva.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-sm border border-amber-100">
+                        <h3 class="font-bold text-amber-700 mb-2">Testimonio Compartido</h3>
+                        <p class="text-sm italic mb-2">"Cuando venga el Defensor... él dará testimonio de mí; y también ustedes darán testimonio." (Jn 15, 26-27)</p>
+                        <p class="text-xs text-slate-500">Revela la unión entre la acción del Espíritu y la misión de los discípulos.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Momentos Trinitarios -->
+        <section id="section-momentos" class="content-section hidden">
+            <h2 class="text-3xl font-bold text-center text-amber-900 mb-8">La Trinidad en Unidad</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
+                <!-- Anunciación -->
+                <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-yellow-500 trinity-card">
+                    <h3 class="text-xl font-bold mb-2 text-amber-700">La Anunciación</h3>
+                    <p class="text-sm text-slate-600 mb-4 italic">"—El Espíritu Santo bajará sobre ti y el poder del Altísimo te cubrirá con su sombra; por eso el niño que nazca será santo y se llamará Hijo de Dios." (Lc 1, 35)</p>
+                    <p class="text-xs text-slate-500 mb-2">La primera revelación explícita: el Padre (Altísimo) envía al Espíritu para la encarnación del Hijo.</p>
+                    <span class="text-xs font-semibold bg-yellow-100 text-yellow-800 px-2 py-1 rounded border border-yellow-200">Lucas 1</span>
+                </div>
+                <!-- Bautismo -->
+                <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-yellow-500 trinity-card">
+                    <h3 class="text-xl font-bold mb-2 text-amber-700">El Bautismo</h3>
+                    <p class="text-sm text-slate-600 mb-4 italic">"Apenas se bautizó Jesús, salió del agua; entonces se abrió el cielo y vio al Espíritu de Dios que bajaba como una paloma y se posaba sobre él. Y una voz del cielo decía: —Este es mi Hijo amado, mi predilecto." (Mt 3, 16-17)</p>
+                    <span class="text-xs font-semibold bg-yellow-100 text-yellow-800 px-2 py-1 rounded border border-yellow-200">Mateo 3</span>
+                </div>
+                <!-- Transfiguración -->
+                <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-yellow-500 trinity-card">
+                    <h3 class="text-xl font-bold mb-2 text-amber-700">La Transfiguración</h3>
+                    <p class="text-sm text-slate-600 mb-4 italic">"Se transfiguró delante de ellos... Se formó una nube que los cubrió con su sombra y se oyó una voz desde la nube: —Este es mi Hijo amado; escúchenlo." (Mc 9, 2.7)</p>
+                    <p class="text-xs text-slate-500 mb-2">Manifestación de gloria: el Padre (voz), el Hijo (transfigurado) y el Espíritu (nube luminosa).</p>
+                    <span class="text-xs font-semibold bg-yellow-100 text-yellow-800 px-2 py-1 rounded border border-yellow-200">Marcos 9</span>
+                </div>
+                <!-- Gran Comisión -->
+                <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-yellow-500 trinity-card">
+                    <h3 class="text-xl font-bold mb-2 text-amber-700">Fórmula Bautismal</h3>
+                    <p class="text-sm text-slate-600 mb-4 italic">"Vayan y hagan discípulos a todos los pueblos, bautizándolos en el nombre del Padre y del Hijo y del Espíritu Santo." (Mt 28, 19)</p>
+                    <p class="text-xs text-slate-500 mb-2">El mandato misionero definitivo que establece el dogma de la unidad trinitaria.</p>
+                    <span class="text-xs font-semibold bg-yellow-100 text-yellow-800 px-2 py-1 rounded border border-yellow-200">Mateo 28</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-amber-900 text-amber-100 py-10 mt-20 px-6 text-center border-t-8 border-yellow-500">
+        <p class="mb-2 font-semibold">Recurso educativo para la formación de alumnos</p>
+        <p class="text-sm opacity-80 italic">Citas tomadas de la <strong>Biblia de Nuestro Pueblo</strong> (Luis Alonso Schökel)</p>
+    </footer>
+
+    <script>
+        function showSection(sectionId) {
+            document.querySelectorAll('.content-section').forEach(section => {
+                section.classList.add('hidden');
+            });
+            document.getElementById('section-' + sectionId).classList.remove('hidden');
+            document.querySelectorAll('.tab-btn').forEach(btn => {
+                btn.classList.remove('bg-yellow-500', 'text-white', 'border-yellow-600');
+                btn.classList.add('bg-white', 'text-slate-800', 'border-yellow-300');
+            });
+            const activeBtn = document.getElementById('btn-' + sectionId);
+            activeBtn.classList.remove('bg-white', 'text-slate-800', 'border-yellow-300');
+            activeBtn.classList.add('bg-yellow-500', 'text-white', 'border-yellow-600');
+        }
+        window.onload = () => showSection('padre');
+    </script>
+</body>
+</html>
